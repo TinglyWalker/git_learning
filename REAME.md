@@ -19,3 +19,7 @@ This project is for git learning.
 1. git只会将暂存区中的文件提交版本，没有add的修改不会提交。
 - git restore --staged 文件名：丢弃暂存区的修改
     - 不加staged参数，表示丢弃工作区的修改，恢复为暂存区或仓库版本
+
+# 对比文件的不同
+1. 对比工作区和当前版本中文件的不同
+    - git diff HEAD 文件名
