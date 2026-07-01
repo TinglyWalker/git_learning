@@ -21,5 +21,7 @@ This project is for git learning.
     - 不加staged参数，表示丢弃工作区的修改，恢复为暂存区或仓库版本
 
 # 对比文件的不同
-1. 对比工作区和当前版本中文件的不同
+1. 对比工作区和当前版本中文件的不同（减号表示前面的有，加号表示后面的有）
     - git diff HEAD 文件名
+2. 对比两个版本中文件的不同
+    - git diff HEAD^ HEAD 文件名（或使用版本号代替HEAD）
