@@ -1,4 +1,4 @@
-This project is for git learning.
+This project is for git learning and test.
 
 # 常用操作
 - git init: 用git管理当前目录下的代码
@@ -36,8 +36,8 @@ This project is for git learning.
 
 # 分支
 1. 创建分支，就是新建一个 branch 指针，指向新版本。将 HEAD 指向 branch。后续的修改会移动 branch，而 master 指针不动；
-    快速合并：master 没变，直接将 master 移动到 branch 的位置。
-    无法快速合并：master 修改了 file1，branch 新建了 file2。合并之后会做一次新的提交，并弹出弹窗，写提交的说明信息。
+    * 快速合并：master 没变，直接将 master 移动到 branch 的位置。
+    * 无法快速合并：master 修改了 file1，branch 新建了 file2。合并之后会做一次新的提交，并弹出弹窗，写提交的说明信息。
     - git merge --no-ff -m 'xxx' 分支名：禁止快速合并，方便之后看到提交信息。
 - git branch：查看分支，以及在哪个分支下工作
 - git branch 分支名：创建一个新的分支
@@ -56,3 +56,16 @@ This project is for git learning.
 - git stash：保存
 - git stash list：查看已保存的
 - git stash pop：恢复工作现场
+
+# github
+1. 创建仓库 == git init
+2. 配置 Email 和 name ：.git_config 文件
+3. 生成 ssh 密钥：ssh-keygen -t rsa -C "邮箱地址"
+4. 到提示的目录下找 id_rsa（私钥）和 id_rsa.pub（公钥）
+5. 将公钥添加到 GitHub
+6. 若本地没有项目：
+- 用 SSH 地址 clone
+    - git clone 地址
+7. 若本地有项目要推送：
+    - git remote add origin 仓库地址（将仓库地址的别名设为 origin）
+8. 推送：git push origin 分支名称
