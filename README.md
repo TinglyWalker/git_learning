@@ -64,8 +64,7 @@ This project is for git learning and test.
 4. 到提示的目录下找 id_rsa（私钥）和 id_rsa.pub（公钥）
 5. 将公钥添加到 GitHub
 6. 若本地没有项目：
-- 用 SSH 地址 clone
-    - git clone 地址
+    - git clone 地址（用 SSH 地址 clone）
 7. 若本地有项目要推送：
     - git remote add origin 远程仓库地址（给整个仓库配置远程地址，并将仓库地址的别名设为 origin）
 8. 推送：
