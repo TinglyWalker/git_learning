@@ -38,7 +38,7 @@ This project is for git learning.
 1. 创建分支，就是新建一个 branch 指针，指向新版本。将 HEAD 指向 branch。后续的修改会移动 branch，而 master 指针不动；
     快速合并：master 没变，直接将 master 移动到 branch 的位置。
     无法快速合并：master 修改了 file1，branch 新建了 file2。合并之后会做一次新的提交，并弹出弹窗，写提交的说明信息。
-    - git merge --no-ff -m 'xxx'：禁止快速合并，方便之后看到提交信息。
+    - git merge --no-ff -m 'xxx' 分支名：禁止快速合并，方便之后看到提交信息。
 - git branch：查看分支，以及在哪个分支下工作
 - git branch 分支名：创建一个新的分支
 - git switch 分支名：切换分支
@@ -51,4 +51,8 @@ This project is for git learning.
 2. 解决分支冲突：两个不同的分支各自有新的提交，会产生冲突。
     手动更改后，重新提交。
 - git log --graph --oneline：查看冲突合并过程图。
-asd
+
+3. 临时保存当前分支，当前分支工作内容清空（要新的分支改 bug，但是当前分支的任务还不能提交）
+- git stash：保存
+- git stash list：查看已保存的
+- git stash popo：恢复工作现场
