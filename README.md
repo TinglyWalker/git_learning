@@ -55,4 +55,4 @@ This project is for git learning.
 3. 临时保存当前分支，当前分支工作内容清空（要新的分支改 bug，但是当前分支的任务还不能提交）
 - git stash：保存
 - git stash list：查看已保存的
-- git stash popo：恢复工作现场
+- git stash pop：恢复工作现场
