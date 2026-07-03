@@ -39,5 +39,8 @@ This project is for git learning.
     合并分支，就是将 master 移动到 branch 的位置。
 - git branch：查看分支，以及在哪个分支下工作
 - git branch 分支名：创建一个新的分支
-- git switch 分支名：切换
+- git switch 分支名：切换分支
 - git switch -c 分支名：创建并切换 
+
+- git merge 分支名（在 master 上操作）：合并分支
+
