@@ -67,5 +67,7 @@ This project is for git learning and test.
 - 用 SSH 地址 clone
     - git clone 地址
 7. 若本地有项目要推送：
-    - git remote add origin 仓库地址（将仓库地址的别名设为 origin）
-8. 推送：git push origin 分支名称
+    - git remote add origin 远程仓库地址（给整个仓库配置远程地址，并将仓库地址的别名设为 origin）
+8. 推送：
+    - 第一次：git push -u origin 本地仓库分支名称（推送，并给当前分支配置默认推送目标）
+    - 之后：git push
