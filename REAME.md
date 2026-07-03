@@ -20,8 +20,15 @@ This project is for git learning.
 - git restore --staged 文件名：丢弃暂存区的修改
     - 不加staged参数，表示丢弃工作区的修改，恢复为暂存区或仓库版本
 
+# 恢复
+1. 改了工作区，暂存区未改：git restore 文件名 恢复。
+2. 改了工作区，且提交到了暂存区：git reset HEAD 文件名，然后 git restore 文件名 恢复。
+
 # 对比文件的不同
 1. 对比工作区和当前版本中文件的不同（减号表示前面的有，加号表示后面的有）
     - git diff HEAD 文件名
 2. 对比两个版本中文件的不同
     - git diff HEAD^ HEAD 文件名（或使用版本号代替HEAD）
+
+# 删除文件
+1. rm 删除文件后，用 git add . 或 git rm 文件名 来同步到暂存区。
