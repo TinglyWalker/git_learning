@@ -51,3 +51,4 @@ This project is for git learning.
 2. 解决分支冲突：两个不同的分支各自有新的提交，会产生冲突。
     手动更改后，重新提交。
 - git log --graph --oneline：查看冲突合并过程图。
+asd
