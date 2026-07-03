@@ -11,7 +11,7 @@ This project is for git learning.
     - --hard：暂存区清空，工作区清空。
     - --mixed（默认）：暂存区清空，工作区保留
     - --soft：暂存区保留，工作区保留
-    - HEAD：一个指针，指向最新的版本
+    - HEAD：一个指针，指向当前分支的最新版本
 - git reflog：查看版本历史（用于撤销回退）
 - git status：查看当前工作区的状态（提示有哪些文件修改了，有哪些文件没有跟踪（即新创建的文件））
 
@@ -32,3 +32,12 @@ This project is for git learning.
 
 # 删除文件
 1. rm 删除文件后，用 git add . 或 git rm 文件名 来同步到暂存区。
+
+
+# 分支
+1. 创建分支，就是新建一个 branch 指针，指向新版本。将 HEAD 指向 branch，后续的修改会移动 branch，而 master 指针不动；
+    合并分支，就是将 master 移动到 branch 的位置。
+- git branch：查看分支，以及在哪个分支下工作
+- git branch 分支名：创建一个新的分支
+- git switch 分支名：切换
+- git switch -c 分支名：创建并切换 
