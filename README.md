@@ -47,3 +47,4 @@ This project is for git learning.
 - git branch -D 分支名：强制删除，不管是否合并
 
 2. 解决分支冲突：两个不同的分支各自有新的提交，会产生冲突。
+    手动更改后，重新提交。
