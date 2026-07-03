@@ -43,4 +43,5 @@ This project is for git learning.
 - git switch -c 分支名：创建并切换 
 
 - git merge 分支名（在 master 上操作）：合并分支
-
+- git branch -d 分支名：删除已合并的分支（安全）
+- git branch -D 分支名：强制删除，不管是否合并
