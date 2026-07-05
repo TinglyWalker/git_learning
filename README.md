@@ -61,7 +61,7 @@ This project is for git learning and test.
 1. 创建仓库 == git init
 2. 配置 Email 和 name ：.git_config 文件
 3. 生成 ssh 密钥：ssh-keygen -t rsa -C "邮箱地址"
-4. 到提示的目录下找 id_rsa（私钥）和 id_rsa.pub（公钥）
+4. 到提示的目录下（/home/max/.ssh/）找 id_rsa（私钥）和 id_rsa.pub（公钥）
 5. 将公钥添加到 GitHub
 6. 若本地没有项目：
     - git clone 地址（用 SSH 地址 clone）
@@ -70,5 +70,5 @@ This project is for git learning and test.
 8. 推送：
     - 第一次：git push -u origin 本地仓库分支名称（推送，并给当前分支配置默认推送目标）
     - 之后：git push
-9. 本地分支跟踪远程分支：git branch --set-upstream-to=origin/分支名 分支名
-10. 拉取代码：
+9. 本地分支跟踪远程分支（之后可以直接 git push 推送）：git branch --set-upstream-to=origin/分支名 分支名
+10. 拉取代码：git pull origin 分支名称
