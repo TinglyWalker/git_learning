@@ -71,3 +71,4 @@ This project is for git learning and test.
     - 第一次：git push -u origin 本地仓库分支名称（推送，并给当前分支配置默认推送目标）
     - 之后：git push
 9. 本地分支跟踪远程分支：git branch --set-upstream-to=origin/分支名 分支名
+10. 拉取代码：
